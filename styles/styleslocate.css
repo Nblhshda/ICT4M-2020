@@ -1,0 +1,303 @@
+*{
+  box-sizing: border-box;
+  font-family:  verdana,sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-image: url('../images/shas_mosque.jpg');
+  background-repeat: no-repeat;
+  background-attachment: relative;
+  /*background-size: 100% 100%;
+  background-color: #f1f1f1;*/
+  background-size: 1410px;
+  width: 100%;
+  height: 466px;
+  padding: 150px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #1f4740;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.col-container {
+  display: table;
+  width: 100%;
+}
+/* Left and right column */
+.column.side {
+  display: table-cell;
+  padding: 16px;
+  width:25%;
+}
+
+/* Middle column */
+.column.middle {
+  display: table-cell;
+  padding: 16px;
+  width:55%;
+}
+#Venue{
+  background-color: lightgrey;
+  width: 450px;
+  border: 1px solid white;
+  border-radius: 5px;
+  border:0;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+#descvenue{
+  background-color: #9AC4BD;
+  border-radius: 25px;
+  width: 650px;
+  border: 1px solid white;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+  display: inline-block;
+}
+/* Clear floats after the columns
+.row:after {
+  content: "";
+  width: 100%;
+  display: table;
+  clear: both;
+}*/
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    display: block;
+    width: 100%;
+    position: absolute;
+  }
+}
+
+/* Style the footer */
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1f4740;
+  color: white;
+  text-align: center;
+
+}
+.button {
+  font-size: 12px;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-decoration: none;
+  color: black;
+  padding: 15px 34px;
+  margin: 8px 0;
+  cursor: pointer;
+  width: 25%;
+  transition: all 0.3s ease-out;
+  position: fixed;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
+.circle {
+  height: 150px;
+  width: 150px;
+  padding: 45px;
+  background-color: #9AC4BD;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+}
+/* Popup container - can be anything you want */
+.message {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.message .messagetext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.message .messagetext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.message .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+#address{
+  background-color: #9AC4BD;
+  border-radius: 25px;
+  width: 650px;
+  border: 1px solid white;
+  padding: 15px;
+  margin: 0;
+  text-align: center;
+}
