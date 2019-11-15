@@ -1,4 +1,6 @@
-
+body{
+  margin:0;
+}
 .body {
   width: 100%;
   background-color: none;
