@@ -302,7 +302,6 @@ div.imgBx{
 /*Division of part Intro*/
 .one{
   background-color: #378073;
-  background-image: -webkit-linear-gradient(30deg, #378073 50%, #9AC4BD 50%);
   min-height: 500px;
   overflow: hidden;
   position:relative;
