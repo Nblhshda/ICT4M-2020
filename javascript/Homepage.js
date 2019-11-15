@@ -15,3 +15,24 @@ buss_next.addEventListener('click', function () {
     // buss_card_wrp.style.transition = 'all 0.5s';
 
 })
+
+// Slick slider init
+
+$(".sliderConf").slick({
+
+    autoplay: true,
+    dots: true,
+    customPaging : function(slider, i) {
+        var thumb = $(slider.$slides[i]).data('thumb');
+        return '<a><img src="'+thumb+'"></a>';
+    },
+
+    responsive: [{
+        breakpoint: 500,
+        settings: {
+            dots: false,
+            arrows: false,
+            infinite: false,
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
