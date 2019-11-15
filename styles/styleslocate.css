@@ -25,6 +25,15 @@ body {
   margin: 12px;
   text-shadow: 5px 2px #000;
 }
+.logo {
+  float: left;
+  overflow: hidden;
+  background-color: #1f4740;
+}
+.logo a:hover,.logo:hover {
+  background-color: #ddd;
+  color: black;
+}
 /* Style the top navigation bar */
 .topnav {
   overflow: hidden;
@@ -117,7 +126,7 @@ body {
   background: #378073;
 }
 
-.overlay {
+.overlay{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -131,6 +140,7 @@ body {
 .overlay:target {
   visibility: visible;
   opacity: 1;
+  z-index: 3;
 }
 
 .popup {
@@ -141,6 +151,7 @@ body {
   width: 30%;
   position: relative;
   transition: all 5s ease-in-out;
+
 }
 
 .popup h2 {
@@ -227,7 +238,7 @@ body {
   border-radius: 50%;
   display: inline-block;
   text-align: center;
-  position: relative;
+
 }
 /* Popup container */
 .message {
