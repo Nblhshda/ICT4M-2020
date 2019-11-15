@@ -14,46 +14,14 @@
   background-attachment: relative;
 }
 
-.container {
-  text-align: center;
-  font-family: Verdana, Geneva, sans-serif;
-  color: white;
-  font-family: Georgia;
-  font-style: italic;
-  font-size:70px;
-  text-shadow: 2px 2px black;
-}
-
-.div1 {
-  font-size: 20px;
-  width: 80%;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 30px;
-  border-radius: 70px 10px;
-  border-color: #72bb97;
-  text-align: justify;
-  background-color: #9AC4BD;
-  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
-}
-.p1, .p2{
-  font-size: 25px;
-}
-
-.logo1 {
+.logo {
   float: left;
   overflow: hidden;
   background-color: #1f4740;
 }
-.logo1 a:hover,.logo:hover {
+.logo a:hover,.logo:hover {
   background-color: #ddd;
   color: black;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 /* Style the top navigation bar */
 .topnav {
@@ -91,6 +59,7 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  font-family:  verdana,sans-serif;
 }
 
 .dropdown-content {
@@ -100,6 +69,7 @@
   min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-family:  verdana,sans-serif;
 }
 
 .dropdown-content a {
@@ -119,6 +89,38 @@
   display: block;
 }
 
+.container {
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  font-family: Georgia;
+  font-style: italic;
+  font-size:70px;
+  text-shadow: 2px 2px black;
+}
+
+.div1 {
+  font-size: 20px;
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 70px 10px;
+  border-color: #72bb97;
+  text-align: justify;
+  background-color: #9AC4BD;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+.p1, .p2{
+  font-size: 25px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 table, th, td{
   border: 1px solid black;
