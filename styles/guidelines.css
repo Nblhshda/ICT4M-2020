@@ -12,6 +12,16 @@ body {
   padding: 50px;
 }
 
+.logo {
+  float: left;
+  overflow: hidden;
+  background-color: #1f4740;
+}
+.logo a:hover,.logo:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .topnav {
 
   overflow: hidden;
