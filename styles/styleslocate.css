@@ -192,19 +192,20 @@ body {
   width:75%;
 }
 #Venue{
-  background-color: lightgrey;
+  background-color: #9AC4BD;
   width: 450px;
-  border: 1px solid white;
+  border: 2px solid black;
   border-radius: 5px;
   border:0;
   padding: 15px;
   margin: 0;
   text-align: center;
   display: inline-block;
+  text-shadow: 2px 2px white;
 }
 
 #descvenue{
-  background-color: #9AC4BD;
+  background-color: #378073;
   border-radius: 25px;
   width: 650px;
   border: 1px solid white;
@@ -212,6 +213,7 @@ body {
   margin: 0;
   text-align: center;
   display: inline-block;
+  color: white;
 }
 /* Clear floats after the columns*/
 .column.middle:after {
@@ -238,6 +240,9 @@ body {
   border-radius: 50%;
   display: inline-block;
   text-align: center;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 18px;
 
 }
 /* Popup container */
@@ -304,6 +309,8 @@ body {
   padding: 15px;
   margin: 0;
   text-align: center;
+  color: black;
+  text-shadow: 1px 1px white;
 }
 /* Style the footer */
 .footer {
