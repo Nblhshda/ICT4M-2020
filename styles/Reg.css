@@ -375,12 +375,14 @@ tr:nth-child(odd){
 }
 .footer {
   position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #1f4740;
   color: white;
+  left: -5px;;
+  bottom: -5px;
+  width: 100%;
   text-align: center;
+  display: inline-block;
+  margin-top: 5%;
   font-family:  verdana,sans-serif;
 
 }
