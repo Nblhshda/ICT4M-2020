@@ -302,7 +302,7 @@ div.imgBx{
 /*Division of part Intro*/
 .one{
   background-color: #378073;
-  background-image: -webkit-linear-gradient(30deg, #378073 50%, #9AC4BD 50%);
+ 
   min-height: 500px;
   overflow: hidden;
   position:relative;
@@ -310,7 +310,6 @@ div.imgBx{
   padding: 50px 20px;
   animation:animate 5s linear infinite;
 }
-
 
 .one:nth-child(3) {
   background: #9ac4bd url(https://www.transparenttextures.com/patterns/fresh-snow.png);
