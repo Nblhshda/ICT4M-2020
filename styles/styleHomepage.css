@@ -311,6 +311,15 @@ div.imgBx{
   animation:animate 5s linear infinite;
 }
 
+.one::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50%;
+  width: 100%;
+  height: 100%;
+}
+
 .one:nth-child(3) {
   background: #9ac4bd url(https://www.transparenttextures.com/patterns/fresh-snow.png);
 }
