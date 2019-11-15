@@ -1,7 +1,7 @@
 body{
   margin:0;
 }
-.body {
+.body1 {
   width: 100%;
   background-color: none;
   position: absolute;
@@ -381,5 +381,6 @@ tr:nth-child(odd){
   background-color: #1f4740;
   color: white;
   text-align: center;
+  font-family:  verdana,sans-serif;
 
 }
