@@ -96,7 +96,7 @@ body{
 /*header*/
 
 .header-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("project/images/header.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("images/header.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -311,16 +311,6 @@ div.imgBx{
   animation:animate 5s linear infinite;
 }
 
-.one::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50%;
-  width: 100%;
-  height: 100%;
-  transform: skewx(-5deg);
-
-}
 
 .one:nth-child(3) {
   background: #9ac4bd url(https://www.transparenttextures.com/patterns/fresh-snow.png);
