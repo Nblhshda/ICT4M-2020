@@ -590,38 +590,6 @@ hr  {
   background-size: 2px solid;
 }
 
-/*Style the advConf slide*/
-$c1: red;
-$c2: #efdfda;
-
-.sliderConf {
-    width: auto;
-    margin: 30px 50px 50px;
-}
-
-.slick-slide {
-    background: $c1;
-    color: white;
-    padding: 20px 0;
-    font-size: 30px;
-    font-family: "Arial", "Helvetica";
-    text-align: center;
-
-    img { display: inline-block; }
-}
-
-.slick-prev:before,
-.slick-next:before {
-    color: black;
-}
-
-.slick-dots {
-    bottom: -40px;
-}
-
-.slick-slide:nth-child(odd) {
-     background: $c2;
-}
 
 
 /*Style class five : follow hashtag part*/
