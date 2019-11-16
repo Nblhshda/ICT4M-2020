@@ -121,6 +121,7 @@ body {
   transition: all 0.3s ease-out;
   position: fixed;
   bottom: 0;
+  z-index: 10;
 }
 .button:hover {
   background: #378073;
