@@ -120,6 +120,7 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  z-index: 10;
 }
 
 .header-text .btn {
@@ -181,7 +182,7 @@ body{
 .overlay:target {
   visibility: visible;
   opacity: 1;
-  z-index: 5;
+  z-index: 10;
 }
 
 .popup {
@@ -192,6 +193,7 @@ body{
   width: 60%;
   position: relative;
   transition: all 5s ease-in-out;
+  z-index: 10;
 }
 
 .popup h2 {
@@ -359,7 +361,11 @@ width: 40%;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9);
   position: relative;
 }
-
+#theme{
+  color: black;
+  text-align: center;
+  text-emphasis-style: circle;
+}
 /*Style for button program*/
 .hr-halfIntro {
   display: flex;
