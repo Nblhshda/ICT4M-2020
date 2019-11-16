@@ -1,0 +1,495 @@
+#logo {
+    background: url(images/logo_iium.png) no-repeat;
+    height:100px;
+    float:left;
+    width:340px;
+}
+
+#menu {
+    float:left;
+    width:910px;
+    background: #CFB43A;
+    -moz-border-radius: 10px;
+    padding:10px;
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+
+
+.menu_an li a{
+    float:left !important;
+    padding: 3px;
+    list-style-type: none;
+}
+.menu_an{
+    list-style-type: none;
+}
+.menu_an font{
+    float:left !important;
+    margin-top:4px;
+}
+
+ie .menu_an li a{
+    float:left !important;
+    padding: 3px;
+    list-style-type: none;
+    vertical-align: middle;
+    margin-top: 10px;
+}
+ie .menu_an{
+    list-style-type: none;
+}
+ie .menu_an font{
+    float:left !important;
+    margin-top:4px;
+}
+
+ie #menu .menu_an li a{
+    margin-top: 10px;
+}
+
+a.active{
+    font-weight: bold !important;
+    color: yellow !important;
+    text-decoration:none !important;
+}
+
+#bankPic .image{
+    /*width: 104px;
+    height: 46px;*/
+    float:left;
+    padding: 5px 7px;
+}
+#bankPic{
+    margin-left:29px;
+    /*width: 450px;*/
+	text-align: center;
+}
+
+.checkbox{
+    width: 850px;
+    margin-left: -3px;
+}
+
+.checkbox, .event_checkbox{
+    float:left;
+    clear:right;
+}
+
+.payment{
+    margin:0 416px auto;
+    width:100px;
+    padding-bottom:52px;
+}
+
+.payment_parent{
+    width:130px;
+    margin-left:-22px;
+}
+/* DATE PICKER */
+
+#datepicker{
+
+}
+/*
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+    display:block;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-8px;
+    position:absolute;
+    top:50%;
+}*/
+
+#files-root td, .conf td{
+    border:none;
+    background:none !important;
+}
+
+.actions a{
+    display:inline !important;
+}
+
+#right-link{
+    float:right;
+}
+
+.required{
+    color:#444444 !important;
+}
+
+.confe{
+    margin-left: -7px;
+}
+
+
+
+
+/*
+.registerno
+.registerevent
+.registerkcd
+.registerrate
+.registerparticipant
+.registeramount
+.registerorganization
+.registercontact
+.registeremail
+.registermode
+.registerdate
+.registerstatus
+*/
+
+#announce{
+    border: 1px solid;
+    float: right;
+    font-weight: bold;
+    padding: 9px;
+}
+
+table#maintable, table {
+font-size:100%;
+}
+
+/*border-right:0 solid #BEBEBE;
+border-style:solid;
+border-width:1px 0 0;*/
+color:black;
+font-size:90%;
+margin-bottom:5px;
+padding-top:3px;
+text-align:center;
+}
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+/** General Style Info **/
+body {
+	background: #72bb97;
+	color: #fff;
+	font-family:sans-serif;
+	font-size:90%;
+	margin: 0;
+}
+
+a {
+	color: #f1e3d4;
+	text-decoration: underline;
+	font-weight: normal;
+}
+a:hover {
+	color: #72bb97;
+	text-decoration:none;
+}
+
+h1 {
+	background:#fff;
+	color: #003d4c;
+	font-size: 100%;
+}
+
+/** Layout **/
+#container{
+	text-align: left;
+	margin:0 auto;
+	width:950px;
+}
+
+#header h1 {
+	line-height:20px;
+	background:none;
+	color: #fff;
+	padding: 0px 30px;
+	text-align:right;
+}
+#header h1 a {
+	color: #fff;
+	/*background: #003d4c;*/
+	font-weight: normal;
+	text-decoration: none;
+}
+#header h1 a:hover {
+	color: #fff;
+	/*background: #003d4c;*/
+	text-decoration: underline;
+}
+#content{
+	background: #fff;
+	clear: both;
+	color: #333;
+	padding: 10px 9px 9px 11px;
+	overflow: auto;
+	-moz-border-radius: 10px;
+}
+
+/** containers **/
+div.form,
+div.index,
+div.view {
+	float:right;
+	width:76%;
+	border-left:1px solid #666;
+	padding:10px 2%;
+}
+div.actions {
+	float:left;
+	width:16%;
+	padding:10px 1.5%;
+}
+
+/** Tables **/
+table {
+	background: #fff;
+	border-right: 0;
+	clear: both;
+	color: #333;
+	margin-bottom: 10px;
+	width: 100%;
+  font-size: 100%;
+}
+th {
+	border:0;
+	border-bottom:2px solid #555;
+	text-align: left;
+	padding:4px;
+}
+th a {
+	display: block;
+	padding: 2px 4px;
+	text-decoration: none;
+}
+th a.asc:after {
+	content: ' â‡£';
+}
+th a.desc:after {
+	content: ' â‡¡';
+}
+table tr td {
+	background: #fff;
+	padding: 6px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom:1px solid #ddd;
+}
+table tr:nth-child(2n) td {
+	background: #f5f5f5;
+}
+table .altrow td {
+	background: #f5f5f5;
+}
+td.actions, th.actions {
+	text-align: center;
+	white-space: nowrap;
+}
+table td.actions a {
+	margin: 0px 6px;
+	padding:2px 5px;
+}
+.cake-sql-log table {
+	background: #f4f4f4;
+}
+.cake-sql-log td {
+	padding: 4px 8px;
+	text-align: left;
+	font-family: "Courier New";
+}
+.cake-sql-log caption {
+	color:#fff;
+}
+
+/** Forms **/
+form {
+	clear: both;
+	margin-right: 0;
+	padding: 0;
+
+}
+fieldset {
+	border: 1px solid #ccc;
+	margin-bottom: 1em;
+	padding: 16px 20px;
+}
+fieldset legend {
+	background:#fff;
+	color: #e32;
+	font-size: 160%;
+	font-weight: bold;
+}
+fieldset fieldset {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding: 16px 10px;
+}
+fieldset fieldset legend {
+	font-size: 120%;
+	font-weight: normal;
+}
+fieldset fieldset div {
+	clear: left;
+	margin: 0 20px;
+}
+form div {
+	clear: both;
+	margin-bottom: 1em;
+	padding: .5em;
+	vertical-align: text-top;
+}
+form .input {
+	color: #444;
+}
+form .required {
+	font-weight: bold;
+}
+form .required label:after {
+	color: #e32;
+	content: '*';
+	display:inline;
+}
+form div.submit {
+	border: 0;
+	clear: both;
+	margin-top: 10px;
+}
+label {
+	display: block;
+	font-size: 110%;
+	margin-bottom:3px;
+}
+
+input, textarea {
+	clear: both;
+	font-size: 100%;
+	font-family:sans-serif;
+	padding: 1%;
+	width:98%;
+}
+
+select {
+	clear: both;
+	font-size: 120%;
+	vertical-align: text-bottom;
+}
+select[multiple=multiple] {
+	width: 100%;
+}
+option {
+	font-size: 120%;
+	padding: 0 3px;
+}
+input[type=checkbox] {
+	clear: left;
+	float: left;
+	margin: 0px 6px 7px 2px;
+	width: auto;
+}
+div.checkbox label {
+	display: inline;
+}
+input[type=radio] {
+	float:left;
+	width:auto;
+	margin: 0 3px 7px 0;
+}
+div.radio label {
+	margin: 0 0 6px 20px;
+}
+button[type=submit] {
+	display: inline;
+	font-size: 110%;
+	width: auto;
+}
+
+button .submit input[type=submit]{
+	background:#62af56;
+	background: -webkit-gradient(linear, left top, left bottom, from(#a8ea9c), to(#62af56));
+	background-image: -moz-linear-gradient(top, #a8ea9c, #62af56);
+	border-color: #2d6324;
+	color: #000;
+	text-shadow: #8cee7c 0px 1px 0px;
+}
+button .submit input[type=submit]:hover, button input[type=submit]:hover {
+	background:#4ca83d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#85e573), to(#4ca83d));
+	background-image: -moz-linear-gradient(top, #85e573, #4ca83d);
+}
+
+/** Notices and Errors **/
+div.message {
+	clear: both;
+	color: #fff;
+	font-size: 140%;
+	font-weight: bold;
+	margin: 0 0 1em 0;
+	background: #c73e14;
+	padding: 5px;
+}
+div.error-message {
+	clear: both;
+	color: #fff;
+	font-weight: bold;
+	background: #c73e14;
+}
+p.error {
+	background-color: #e32;
+	color: #fff;
+	font-family: Courier, monospace;
+	font-size: 120%;
+	line-height: 140%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+p.error em {
+	color: #000;
+	font-weight: normal;
+	line-height: 140%;
+}
+.notice {
+	background: #ffcc00;
+	color: #000;
+	display: block;
+	font-family: Courier, monospace;
+	font-size: 120%;
+	line-height: 140%;
+	padding: 0.8em;
+	margin: 1em 0;
+}
+.success {
+	background: green;
+	color: #fff;
+}
+
+
+button[type=submit], .cancel {
+	font-weight:normal;
+	background:#e6e49f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f1f1d4), to(#e6e49f));
+	color:#333;
+	border:1px solid #aaac62;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	text-decoration:none;
+	text-shadow: #fff 0px 1px 0px;
+	min-width: 0;
+}
+
+button[type=submit]:hover,
+div.actions ul li a:hover,
+td.actions a:hover, .cancel:hover {
+	background: #f0f09a;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7f7e1), to(#eeeca9));
+}
+
+
+#linked{
+    float:left;
+}
