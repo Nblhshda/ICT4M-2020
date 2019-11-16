@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Econference</title>
+    <link rel="stylesheet" href="payment.css">
+  </head>
+  <body>
+    <div id="container">
+               <div id="header">
+                   <div id="logo">&nbsp;</div>
+
+                   <h1>
+                                       <a href='https://epayment.iium.edu.my/'>Home</a> | <a href='https://epayment.iium.edu.my/edonate/'>E-Donation</a> | <a href='https://epayment.iium.edu.my/eregister/'>E-Fee</a> | <a href='https://epayment.iium.edu.my/alumni/'>Alumni E-Donation</a> | <a class ='active' href='https://epayment.iium.edu.my/econference/econferences'>E-Conference</a>
+               </h1>
+           </div>
+           <div id="content">
+                                       <div id="menu">
+                           <ul class="menu_an">
+                       <li><a href="https://epayment.iium.edu.my/econference/econferences" class="active">Home</a></li><font>|</font>
+<li><a href="https://epayment.iium.edu.my/econference/users/login">Login</a></li></ul>
+                                           </div>
+
+<pre></pre>
+
+<!--[if IE]>
+   <style>
+       input{width:240px !important;}
+       .payment{padding-left: 20px;}
+
+   </style>
+<![endif]-->
+<div id="econference index">
+   <div id='announce'><blink>Register before <font id='dateEarlyAfter'>&nbsp;</font> and get <font id='dateEarly'>&nbsp;</font> discount for Early Bird.</blink></div>    <div id="earlyAnnounce" style="float:right;">
+       &nbsp;
+   </div>
+<form name="econference" method="post" onsubmit="return validate()" id="EconferenceAdd/300Form" action="/econference/econferences/add/300" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST" /></div>
+   <input type="hidden" name="data[Register][kcd_id]" value="87" id="RegisterKcdId" /><input type="hidden" name="data[Register][event_id]" value="300" id="RegisterEventId" />
+   <fieldset>
+       <legend>Econference - Register</legend>
+       <table class="conf">
+           <tr>
+
+               <input type="hidden" name="data[Register][events_name]" value="International Conference on Information &amp; Communication Technology for the Muslim World (ICT4M 2018)" id="RegisterEventsName" />
+                   <td width="213px"><label class="input select required">Event Name</label></td>
+                   <td><div class="named">International Conference on Information & Communication Technology for the Muslim World (ICT4M 2020)</div></td>
+                           </tr>
+           <tr>
+                                   <td><label class="input select required">Rate</label></td>
+                   <td>
+           <!--[if IE]>
+                           <input type="hidden" value="12-01-2017" id="eventStart" name="eventStart">
+                       <![endif]-->
+                       <input type="hidden" value="2017-12-01" id="eventStart" name="eventStart">
+                       <input type="hidden" value="2019-11-14" id="dateNow" name="dateNow">
+                       <select id="condValue" class="conf" name="data[Register][rates_id]" onchange="return selectFirstAmount()">
+                       <option value="1">Local Participant W/out Paper</option>
+                       <option value="2">Intl. Participant W/out Paper</option>
+                       <option value="3">Presenter (International)</option>
+                       <option value="4">Presenter (Local)</option>
+                       <option value="5">Student (Presenter)</option>
+                       <option value="6">Exhibition</option>
+                       <option value="7">Intl. Student (Presenter)</option>
+                       <option value="8">Full-day Workshop(Non-Student)</option>
+                       <option value="9">Mini Workshop (Non-Student)</option>
+                       <option value="10">Presenter (additional 1 paper)</option>
+                       <option value="11">Presenter(additional 2 papers)</option>
+                       <option value="12">Mini Workshop (Student)</option>
+                       <option value="13">Full-day Workshop (Student)</option>
+                   </select>
+               </td>
+           </tr>
+
+           <body onload='selectFirstAmount()'></body>
+
+           <tr>
+               <td style="border:none;"><div class="input text required conf confe"><label>Participants</label></div></td>
+               <td>
+                   <table id="part"><tbody id='files-root'>
+                           <tr>
+                               <td>Name: </td>
+                               <td>Designation: </td>
+                           </tr>
+                           <tr id='participants' name='participants'>
+                               <td><input type='text' name='data[Participant][name][]'/></td>
+                               <td><input type='text' name='data[Participant][designation][]'/></td>
+                               <td>
+                                   <span onclick='addFile()' style='cursor:pointer;'><img style='width:22px; height:22px;' src='images/plus.svg'></span>
+                               </td>
+                           </tr>
+                   </table>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <label class='required'>Amount (excl. GST) </label>
+       <input type="hidden" name="data[Register][amount]" id="amount" />                </td>
+               <td><div style='float:left;clear:none;margin-left: -6px;margin-top:-4px;'>RM </div><div id='dummy' style='float:left;clear:none;margin-top:-4px;'></div></td>
+           </tr>
+     <tr>
+               <td>
+                   <label class='required'>GST Amount</label>
+         <input type="hidden" name="data[Register][gst]" id="gst" />                </td>
+               <td><div style='float:left;clear:none;margin-left: -6px;margin-top:-4px;'>RM </div><div id='gstDummy' style='float:left;clear:none;margin-top:-4px;'></div></td>
+           </tr>
+     <tr>
+               <td>
+                   <label class='required'>Total Amount (incl. GST)</label>
+         <input type="hidden" name="data[Register][totalAmount]" id="totalAmount" />                </td>
+               <td><div style='float:left;clear:none;margin-left: -6px;margin-top:-4px;'>RM </div><div id='totalDummy' style='float:left;clear:none;margin-top:-4px;'></div></td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="input text required conf confe">
+                       <label for="RegisterOrganization" >Organization</label>
+                   </div>
+               </td>
+               <td><input type="text" id="RegisterOrganization" maxlength="100" name="data[Register][organization]"></td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="input text required conf confe">
+                       <label for="RegisterContactPerson">Contact No</label>
+                   </div>
+               </td>
+               <td>
+                   Ex: 0123273849 / 0338463345
+                   <p>
+                       <input type="text" id="RegisterContactPerson" name="data[Register][contact_person]"/>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="input text conf confe" style="font-weight:bold;">
+                       <label for="RegisterFaxNo">Fax No</label>
+                   </div>
+               </td>
+               <td>
+                   Ex: 0123273849 / 0338463345
+                   <p>
+                       <input type="text" id="RegisterFaxNo" name="data[Register][fax_no]"/>
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <div class="input text required conf confe">
+                       <label for="RegisterEmail">Email</label>
+                   </div>
+               </td>
+               <td><input type="text" id="RegisterEmail" maxlength="50" class="conf" name="data[Register][email]"></td>
+           </tr>
+     <tr id="RegisterBilling" >
+               <td>
+                   <div class="input text required conf confe">
+                       <label for="RegisterBilling">Billing Address</label>
+                   </div>
+               </td>
+               <td><textarea class="conf" name="data[Register][billing]" id="address"></textarea></td>
+           </tr>
+       </table>
+   </fieldset>
+   <!-- AMOUNT PREPAIR-->
+     <input id="val_1"  type ="hidden" name="data_1[]" value="600.00">
+       <input id="val_1[]" type ="hidden" name="val_1[]" value="1">
+       <input id="val_early_1" type ="hidden" name="early_1[]" value="0">
+       <input id="duration_1" type ="hidden" name="duration_1[]" value="0">
+   <input id="gst_1" type ="hidden" name="gst_1[]" value="0.00">
+   <input id="gst_amount_1" type ="hidden" name="gst_amount_1[]" value="0.00">
+   <input id="gst_type_1" type ="hidden" name="gst_type_1[]" value="zero-rate">
+   <input id="total_1" type ="hidden" name="total_1[]" value="600.00">
+       <input id="val_2"  type ="hidden" name="data_2[]" value="700.00">
+       <input id="val_2[]" type ="hidden" name="val_2[]" value="1">
+       <input id="val_early_2" type ="hidden" name="early_2[]" value="0">
+       <input id="duration_2" type ="hidden" name="duration_2[]" value="0">
+   <input id="gst_2" type ="hidden" name="gst_2[]" value="0.00">
+   <input id="gst_amount_2" type ="hidden" name="gst_amount_2[]" value="0.00">
+   <input id="gst_type_2" type ="hidden" name="gst_type_2[]" value="zero-rate">
+   <input id="total_2" type ="hidden" name="total_2[]" value="700.00">
+       <input id="val_3"  type ="hidden" name="data_3[]" value="2000.00">
+       <input id="val_3[]" type ="hidden" name="val_3[]" value="1">
+       <input id="val_early_3" type ="hidden" name="early_3[]" value="20">
+       <input id="duration_3" type ="hidden" name="duration_3[]" value="182">
+   <input id="gst_134" type ="hidden" name="gst_3[]" value="0.00">
+   <input id="gst_amount_3" type ="hidden" name="gst_amount_3[]" value="0.00">
+   <input id="gst_type_3" type ="hidden" name="gst_type_3[]" value="zero-rate">
+   <input id="total_3" type ="hidden" name="total_3[]" value="2000.00">
+       <input id="val_4"  type ="hidden" name="data_4[]" value="1500.00">
+       <input id="val_4[]" type ="hidden" name="val_4[]" value="1">
+       <input id="val_early_4" type ="hidden" name="early_4[]" value="20">
+       <input id="duration_4" type ="hidden" name="duration_4[]" value="182">
+   <input id="gst_4" type ="hidden" name="gst_4[]" value="0.00">
+   <input id="gst_amount_4" type ="hidden" name="gst_amount_4[]" value="0.00">
+   <input id="gst_type_4" type ="hidden" name="gst_type_4[]" value="zero-rate">
+   <input id="total_4" type ="hidden" name="total_4[]" value="1500.00">
+       <input id="val_5"  type ="hidden" name="data_5[]" value="1000.00">
+       <input id="val_5[]" type ="hidden" name="val_5[]" value="1">
+       <input id="val_early_5" type ="hidden" name="early_5[]" value="20">
+       <input id="duration_5" type ="hidden" name="duration_5[]" value="182">
+   <input id="gst_5" type ="hidden" name="gst_5[]" value="0.00">
+   <input id="gst_amount_5" type ="hidden" name="gst_amount_5[]" value="0.00">
+   <input id="gst_type_5" type ="hidden" name="gst_type_5[]" value="zero-rate">
+   <input id="total_5" type ="hidden" name="total_5[]" value="1000.00">
+       <input id="val_6"  type ="hidden" name="data_6[]" value="1000.00">
+       <input id="val_6[]" type ="hidden" name="val_6[]" value="1">
+       <input id="val_early_6" type ="hidden" name="early_6[]" value="0">
+       <input id="duration_6" type ="hidden" name="duration_6[]" value="0">
+   <input id="gst_6" type ="hidden" name="gst_6[]" value="0.00">
+   <input id="gst_amount_6" type ="hidden" name="gst_amount_6[]" value="0.00">
+   <input id="gst_type_6" type ="hidden" name="gst_type_6[]" value="zero-rate">
+   <input id="total_6" type ="hidden" name="total_6[]" value="1000.00">
+       <input id="val_7"  type ="hidden" name="data_7[]" value="1600.00">
+       <input id="val_7[]" type ="hidden" name="val_7[]" value="1">
+       <input id="val_early_7" type ="hidden" name="early_7[]" value="20">
+       <input id="duration_7" type ="hidden" name="duration_7[]" value="182">
+   <input id="gst_7" type ="hidden" name="gst_7[]" value="0.00">
+   <input id="gst_amount_7" type ="hidden" name="gst_amount_7[]" value="0.00">
+   <input id="gst_type_7" type ="hidden" name="gst_type_7[]" value="zero-rate">
+   <input id="total_7" type ="hidden" name="total_7[]" value="1600.00">
+       <input id="val_8"  type ="hidden" name="data_8[]" value="100.00">
+       <input id="val_8[]" type ="hidden" name="val_8[]" value="1">
+       <input id="val_early_8" type ="hidden" name="early_8[]" value="0">
+       <input id="duration_8" type ="hidden" name="duration_8[]" value="0">
+   <input id="gst_8" type ="hidden" name="gst_8[]" value="0.00">
+   <input id="gst_amount_8" type ="hidden" name="gst_amount_8[]" value="0.00">
+   <input id="gst_type_8" type ="hidden" name="gst_type_8[]" value="zero-rate">
+   <input id="total_8" type ="hidden" name="total_8[]" value="100.00">
+       <input id="val_9"  type ="hidden" name="data_9[]" value="50.00">
+       <input id="val_9[]" type ="hidden" name="val_9[]" value="1">
+       <input id="val_early_9" type ="hidden" name="early_9[]" value="0">
+       <input id="duration_9" type ="hidden" name="duration_9[]" value="0">
+   <input id="gst_9" type ="hidden" name="gst_9[]" value="0.00">
+   <input id="gst_amount_9" type ="hidden" name="gst_amount_9[]" value="0.00">
+   <input id="gst_type_9" type ="hidden" name="gst_type_9[]" value="zero-rate">
+   <input id="total_9" type ="hidden" name="total_9[]" value="50.00">
+       <input id="val_10"  type ="hidden" name="data_10[]" value="500.00">
+       <input id="val_10[]" type ="hidden" name="val_10[]" value="1">
+       <input id="val_early_10" type ="hidden" name="early_10[]" value="0">
+       <input id="duration_10" type ="hidden" name="duration_10[]" value="0">
+   <input id="gst_10" type ="hidden" name="gst_10[]" value="0.00">
+   <input id="gst_amount_10" type ="hidden" name="gst_amount_10[]" value="0.00">
+   <input id="gst_type_10" type ="hidden" name="gst_type_10[]" value="zero-rate">
+   <input id="total_10" type ="hidden" name="total_10[]" value="500.00">
+       <input id="val_11"  type ="hidden" name="data_11[]" value="1000.00">
+       <input id="val_11[]" type ="hidden" name="val_11[]" value="1">
+       <input id="val_early_11" type ="hidden" name="early_11[]" value="0">
+       <input id="duration_11" type ="hidden" name="duration_11[]" value="0">
+   <input id="gst_11" type ="hidden" name="gst_11[]" value="0.00">
+   <input id="gst_amount_11" type ="hidden" name="gst_amount_11[]" value="0.00">
+   <input id="gst_type_11" type ="hidden" name="gst_type_11[]" value="zero-rate">
+   <input id="total_11" type ="hidden" name="total_11[]" value="1000.00">
+       <input id="val_12"  type ="hidden" name="data_12[]" value="25.00">
+       <input id="val_12[]" type ="hidden" name="val_12[]" value="1">
+       <input id="val_early_12" type ="hidden" name="early_12[]" value="0">
+       <input id="duration_12" type ="hidden" name="duration_12[]" value="0">
+   <input id="gst_12" type ="hidden" name="gst_12[]" value="0.00">
+   <input id="gst_amount_12" type ="hidden" name="gst_amount_12[]" value="0.00">
+   <input id="gst_type_12" type ="hidden" name="gst_type_12[]" value="zero-rate">
+   <input id="total_12" type ="hidden" name="total_12[]" value="25.00">
+       <input id="val_13"  type ="hidden" name="data_13[]" value="50.00">
+       <input id="val_13[]" type ="hidden" name="val_13[]" value="1">
+       <input id="val_early_13" type ="hidden" name="early_13[]" value="0">
+       <input id="duration_13" type ="hidden" name="duration_13[]" value="0">
+   <input id="gst_13" type ="hidden" name="gst_13[]" value="0.00">
+   <input id="gst_amount_13" type ="hidden" name="gst_amount_13[]" value="0.00">
+   <input id="gst_type_13" type ="hidden" name="gst_type_13[]" value="zero-rate">
+   <input id="total_13" type ="hidden" name="total_13[]" value="50.00">
+           <!-- END AMOUNT PREPAIR-->
+   <label class="required" style="margin-left:27px;">Payment Via</label>
+   <div class="payment">
+     <div class="payment_parent">
+       <label style="font-weight:bold;">Credit Card</label>
+       <input type="radio" name="data[Register][payment_mode]" value="migs" id="migs"/><label class="visa" style="padding-bottom:8px;"><img src="images/mastercard_logo.gif"><img src="images/visa_logo.gif"></label>
+       <label style="font-weight:bold;" class="fpxlabel">Debit Account</label>
+       <input type="radio" name="data[Register][payment_mode]" value="fpx" id="fpx"/><label><img src="images/fpx_logo.gif"></label>
+     </div>
+
+     <!-- Selection Bank -->
+     <div id='bank_list' style='margin-left: -28px;'>
+       <div>
+         <label style="font-weight:bold;">Select Bank</label>
+         <select name='data[Register][bank_code]' id='bank_code'>
+           <option value=''>-Select One-</option>
+                       <option value='AB'>Affin Bank </option>
+                       <option value='AO'>Alliance Bank </option>
+                       <option value='AM'>AmBank </option>
+                       <option value='BSN'>BSN </option>
+                       <option value='BI'>Bank Islam </option>
+                       <option value='BM'>Bank Muamalat </option>
+                       <option value='BR'>Bank Rakyat </option>
+                       <option value='CC'>CIMB Clicks </option>
+                       <option value='HSBC'>HSBC Bank </option>
+                       <option value='CN'>Hong Leong Bank </option>
+                       <option value='KFH'>KFH </option>
+                       <option value='MB2N'>Maybank2E </option>
+                       <option value='MB'>Maybank2U </option>
+                       <option value='OCBC'>OCBC Bank </option>
+                       <option value='PB'>Public Bank </option>
+                       <option value='RHBn'>RHB Bank </option>
+                       <option value='SC'>Standard Chartered </option>
+                       <option value='UOB'>UOB Bank </option>
+                     </select>
+       </div>
+       <div>
+         <label style="font-weight:bold;">Email</label>
+         <input type='email' name='EMAIL' id='email' style="width: 129px;">
+       </div>
+       <input type='hidden' name='BE_MESSAGE' value='PBe~A,MB2N~A,BR~A,ABMB0212~A,MB~A,BI~A,BM1~A,KFH~A,AB~A,RHBn~A,OCBC~A,SC~A,CN~A,UOB~A,CC~A,AM~A,BSN~A,HSBC~A|01|BC|EX00000889'>
+     </div>
+
+     <button type="submit" style="height:25px;width:60px !important;" value="Save" />Submit </button>			<br/>
+     <br/>
+     <!--<span style='color: red;'>* Currently FPX service was disable for maintenance.</span>-->
+       </div>
+
+</div>
+<center>
+ <table style="background:none; border:none;width:650px">
+   <tr style="background:none; border:none;">
+     <td style="background:none; border:none;">
+       <div id="bankPic">
+       <img src="images/AB.png" alt="" /><img src="images/AO.png" alt="" /><img src="images/AM.png" alt="" /><img src="images/CC.png" alt="" /><img src="images/BI.png" alt="" /><img src="images/CN_01.png" alt="" /><img src="images/MB.png" alt="" /><img src="images/MB2N.png" alt="" /><img src="images/PBe.png" alt="" /><img src="images/RHBn" alt="" /><img src="images/SC.png" alt="" /><img src="images/UOB.png" alt="" /></div>
+     </td>
+   </tr>
+   <!--<tr>
+     <td style="background:none; border:none;">
+       <div align='center'><strong>* Currently FPX service is available 24 hours daily* at most of the FPX participating banks.</strong></div>
+     </td>
+   </tr>-->
+ </table>
+</center>
+<br/>
+<script src="payment.js">
+
+</script>
+
+  </body>
+</html>
