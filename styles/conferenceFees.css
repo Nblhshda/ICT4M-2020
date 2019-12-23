@@ -165,6 +165,7 @@ tr:nth-child(odd){
   width: 100%;
   height: auto;
   background: #eaeaea;
+  font-family: sans-serif
 
   /*add flexbox style*/
 
