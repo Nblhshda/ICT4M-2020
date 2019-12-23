@@ -1,56 +1,30 @@
-//Make the DIV element draggagle:
-dragElement(document.getElementById("popup1"));
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    /* if present, the header is where you move the DIV from:*/
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
   } else {
-    /* otherwise, move the DIV from anywhere inside the DIV:*/
-    elmnt.onmousedown = dragMouseDown;
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
   }
+}
 
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // get the mouse cursor position at startup:
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    // call a function whenever the cursor moves:
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    // calculate the new cursor position:
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    // set the element's new position:
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    /* stop moving when mouse button is released:*/
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-// When the user clicks on div, open the popup
-function popup1() {
-  var popup1 = document.getElementById("myPopup1");
-  popup1.classList.toggle("show");
-}
-function popup2() {
-  var popup2 = document.getElementById("myPopup2");
-  popup2.classList.toggle("show");
-}
-function popup3() {
-  var popup3 = document.getElementById("myPopup3");
-  popup3.classList.toggle("show");
-}
+$(document).ready(function() {
+  $('#myPopup1').hide();
+  $('#myPopup2').hide();
+  $('#myPopup3').hide();
+    $('.message1').click(function() {
+     $('#myPopup1').dialog();
+     });
+     $('.message2').click(function() {
+      $('#myPopup2').dialog();
+      });
+      $('.message3').click(function() {
+       $('#myPopup3').dialog();
+       });
+    });
