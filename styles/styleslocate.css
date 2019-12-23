@@ -223,6 +223,9 @@ body {
   border-radius: 5px;
   color: white;
 }
+#myBtn:hover {
+  background: rgba(0,0,0,0.4);
+}
 #more {
   display: none;
 }
