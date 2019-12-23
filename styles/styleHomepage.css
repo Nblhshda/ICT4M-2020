@@ -280,12 +280,13 @@ h3 {
 }
 
 p {
-  font-family: Verdana;
+  font-family: sans-serif;
   font-size: 16px;
 }
 
 li {
   font-family: sans-serif;
+  font-size:16px;
 }
 
 .exclusions {
