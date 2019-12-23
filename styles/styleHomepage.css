@@ -444,11 +444,11 @@ width: 40%;
 #subscribe {
     margin: 0 auto;
     text-align: center;
-    animation: fadeIn ease 50s;
-    -webkit-animation: fadeIn ease 50s;
-    -moz-animation: fadeIn ease 50s;
-    -o-animation: fadeIn ease 50s;
-    -ms-animation: fadeIn ease 50s;
+    animation: fadeIn ease 200s;
+    -webkit-animation: fadeIn ease 200s;
+    -moz-animation: fadeIn ease 200s;
+    -o-animation: fadeIn ease 200s;
+    -ms-animation: fadeIn ease 200s;
 }
 
 @keyframes fadeIn{
@@ -676,7 +676,7 @@ hr  {
   width: 50%; /* Could be more or less, depending on screen size */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   animation-name: animatetop;
-  animation-duration: 200s
+  animation-duration: 50s
 }
 
 /* The Close Button */
