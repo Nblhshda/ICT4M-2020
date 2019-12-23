@@ -2,6 +2,7 @@ body {
   width: 100%;
   background-color: #EAEAEA;
   margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -162,10 +163,16 @@ tr:nth-child(odd){
 }
 
 .container2{
-  width: 100%;
+  width: 90%;
+  padding: 20px;
+	margin: 100px auto;
   height: auto;
-  background: #eaeaea;
-  font-family: sans-serif
+  background: #007bbf;
+  font-family: sans-serif;
+  padding: 20px;
+  margin: 100px auto;
+	background: #ddd;
+	justify-content: center;
 
   /*add flexbox style*/
 
@@ -181,11 +188,7 @@ tr:nth-child(odd){
   text-align: center;
   background-color: white;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation: fadeIn ease 3s;
-  -webkit-animation: fadeIn ease 3s;
-  -moz-animation: fadeIn ease 3s;
-  -o-animation: fadeIn ease 3s;
-  -ms-animation: fadeIn ease 3s;
+  transition: 1s;
 }
 
 .box2{
@@ -194,24 +197,16 @@ tr:nth-child(odd){
   text-align: center;
   background-color: white;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  animation: fadeIn ease 5s;
-  -webkit-animation: fadeIn ease 5s;
-  -moz-animation: fadeIn ease 5s;
-  -o-animation: fadeIn ease 5s;
-  -ms-animation: fadeIn ease 5s;
+  transition: 1s;
 }
 
 .box3{
     width: 20%;
-    float: left;
+    float: right;
     text-align: center;
     background-color: white;
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    animation: fadeIn ease 7s;
-    -webkit-animation: fadeIn ease 7s;
-    -moz-animation: fadeIn ease 7s;
-    -o-animation: fadeIn ease 7s;
-    -ms-animation: fadeIn ease 7s;
+    transition: 1s;
 }
 
 .box1, .box2, .box3{
@@ -224,19 +219,53 @@ tr:nth-child(odd){
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.box1:hover{
+  transform: scale(1.2);
+  background: #b4dbc8;
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.box2:hover{
+  transform: scale(1.2);
+  background: #b4dbc8;
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+
+.box3:hover{
+  transform: scale(1.2);
+  background: #b4dbc8;
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
+
 .btn:hover{
   background-color: #378073;
   color: black;
 }
+
+/*add responsive media quaries*/
+
+@media screen and (max-width:1200px){
+  .box{
+    width: 40%;
+  }
+}
+
+@media screen and (max-width:600px){
+  .box{
+    width: 90%;
+  }
+}
+
 .footer {
   position: relative;
-  left: 0;
-  bottom: 0;
-  width: 100%;
   background-color: #1f4740;
   color: white;
+  left: -5px;;
+  bottom: -5px;
+  width: 100%;
   text-align: center;
-  font-family:  verdana,sans-serif;
-  font-size:14px;
-  font-style:normal;
+  display: inline-block;
 }
