@@ -4,6 +4,11 @@ body{
     margin: 0;
 }
 
+.header {
+  background-repeat: no-repeat;
+  background-attachment: relative;
+}
+
 .container {
   text-align: center;
   font-family: Verdana, Geneva, sans-serif;
