@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Locate us</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="styles/styleslocate.css">
   </head>
   <body>
@@ -49,7 +52,7 @@
 
   <div class="col-container">
       <div class="column side" style="background:  #dfecea url('https://www.transparenttextures.com/patterns/fresh-snow.png');
-      background-color: #cfe3df;">
+      background-color: #EAEAEA;">
         <br><br>
           <div id="btn">
             <a class="button" href="#popup1"><strong>CLICK HERE FOR IMPORTANT DATES</strong></a>
@@ -76,32 +79,34 @@
       </div>
 
       <div class="column middle" style="background:  #dfecea url('https://www.transparenttextures.com/patterns/fresh-snow.png');
-      background-color: #cfe3df;" >
+      background-color: #EAEAEA;" >
         <div align="center">
           <br>
         <h2 id="Venue">Conference Venue</h2>
           <p id="descvenue">
-          The Kuantan Campus was established with the commencement of the medical programme in 1997 and is located at the Jalan Hospital in the town of Kuantan. The campus or rather the Kulliyyah of Medicine was official opened by HRH Sultan of Pahang on 28 November 1997 and is housed in a building next to the Tengku Ampuan Afzan Hospital (HTAA), which is also the main teaching hospital for the kulliyyah.
-
-          The university decided to establish an administration centre in 2005 for IIUM Kuantan. The administration centre was managed by a Campus Director and a Director (Administration) and was later known as the Office of the Campus Director. There are 18 Departments under the OCD.
+          The Kuantan Campus was established with the commencement of the medical programme in 1997 and is located at the Jalan Hospital in the town of Kuantan.
+          The campus or rather the Kulliyyah of Medicine was official opened by HRH Sultan of Pahang on 28 November 1997 and <span id="dots">... </span><span id="more"> is housed in a building next to the Tengku Ampuan Afzan Hospital (HTAA),
+          which is also the main teaching hospital for the kulliyyah. The university decided to establish an administration centre in 2005 for IIUM Kuantan.
+          The administration centre was managed by a Campus Director and a Director (Administration) and was later known as the Office of the Campus Director.
+          There are 18 Departments under the OCD.   </span><button onclick="myFunction()" id="myBtn">Read more</button>
           </p>
           </div>
           <br><br>
           <p><div style="text-align:center;">
-            <span><span class="circle">Sultan Ahmad Shah Airport</span>
-            <div class="message" onclick="popup1()"> <img src="images/arrow.png" alt="click here " height="105" width="200" >
-              <span class="messagetext" id="myPopup1"><p>Express Bus – MYR 10</p>
+            <span><span class="circle"><p>Sultan Ahmad Shah Airport</p></span>
+            <div class="message1" > <img src="images/arrow.png" alt="click here " height="105" width="200" >
+              <span class="messagetext" id="myPopup1" title="SHAS Airport -> TSK"><p>Express Bus – MYR 10</p>
                 <p>Grab & Uber – Refer to their respective mobile app</p></span>
             </div>
-            <span class="circle">Terminal Kuantan Sentral</span></span><br><br>
-            <label for="fee">Estimated Journey's fee</label><br>
+            <span class="circle"><p class="location">Terminal Kuantan Sentral</p></span></span><br><br>
+            <label for="fee"><strong>Estimated Journey's fee</strong></label><br>
             <span></p>
-              <div class="message" onclick="popup2()"> <img src="images/arrow.png" alt="click here " height="105" width="180" style="transform:rotate(45deg);">
-                <span class="messagetext" id="myPopup2">Grab & Uber – Refer to their respective mobile app</span>
+              <div class="message2" > <img src="images/arrow.png" alt="click here " height="105" width="180" style="transform:rotate(45deg);">
+                <span class="messagetext" id="myPopup2" title="SHAS Airport -> UIA"><p>Grab & Uber – Refer to their respective mobile app</p></span>
               </div>
-            <span class="circle"><br>IIUM</span>
-            <div class="message" onclick="popup3()"> <img src="images/arrow.png" alt="click here " height="105" width="180" style="transform:rotate(135deg);">
-              <span class="messagetext" id="myPopup3"><p>RapidKuantan Bus – MYR 3</p>
+            <span class="circle"><p>IIUM</p></span>
+            <div class="message3" > <img src="images/arrow.png" alt="click here " height="105" width="180" style="transform:rotate(135deg);">
+              <span class="messagetext" id="myPopup3" title="TSK -> UIA"><p>RapidKuantan Bus – MYR 3</p>
                 <p>Grab & Uber – Refer to their respective mobile app</p></span>
             </div></span></div>
             <br>
@@ -134,6 +139,6 @@
     </p>
     <br>
   </div>
-  <script src="javascript/locate.js"></script>
+  <script src="javascript/locate.js" charset="utf-8"></script>
   </body>
 </html>
