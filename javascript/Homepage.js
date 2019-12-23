@@ -25,7 +25,7 @@ var submit = document.getElementById("submit");
 var span01 = document.getElementsByClassName("close01")[0];
 
 // When the user clicks on the button, open the modal
-btn01.onclick = function() {
+submit.onclick = function() {
   modal01.style.display = "block";
 }
 
