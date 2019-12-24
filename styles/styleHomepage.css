@@ -818,7 +818,7 @@ width: 40%;
 .column2 .btn {
   border: none;
   outline: 0;
-  display: inline-block;
+  display: fixed;
   padding: 12px 35px;
   color: white;
   background-color: #000;
